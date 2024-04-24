@@ -1,0 +1,823 @@
+
+/* =================================
+          Common section Css Start
+========================================= */
+body{
+    background-color: #10041c;
+    font-family: sans-serif;
+   }
+   .container{
+        max-width: 1240px;
+        margin: 0 auto;
+
+   }
+   a{
+       text-decoration:none;
+       color: #ffffff;
+      
+       font-family: sans-serif;
+   }
+   p{
+       color: #61557c;
+   }
+   h1,h2 ,h3{
+       color: #ffffff;
+   }
+   ul li{
+    list-style: none;
+   }
+
+
+   ::-webkit-scrollbar{
+    height: 0;
+    width: 0.5rem;
+  
+   }
+   ::-webkit-scrollbar-track{
+   
+    background-color:#271537c3;
+
+   }
+   ::-webkit-scrollbar-thumb{
+    background:linear-gradient(#00ff95 30%,rgba(255, 98, 0, 0.606)70%);
+    border-radius: 10px;
+   }
+
+
+  
+   
+
+  
+
+/* =================================
+          Topbar section Css Start
+========================================= */
+   .hero_section{
+     border-bottom: 2px solid transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #10041c;
+    
+   }
+
+   .topbar_inner{
+  
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+
+   
+   }
+   
+   .logo h1 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   .logo h1 span{
+    color:#00ff95;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+   }
+   .topbar_item ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    font-size: 23px;
+    font-weight: 600;
+    
+   }
+   .topbar_item ul li a{
+    color: #61557c;
+    transition: all 0.5s;
+   }
+   .topbar_item ul li a:hover{
+    color: #ffff;
+    transition: all 0.5s;
+    text-shadow: 0 0 30px #ffff;
+   }
+
+
+   
+   .topbar_item ul li a:hover,
+   .topbar_item ul li a.active{
+    color: #ffff ;
+   }
+
+   /* .topbar_item .logo a img{
+    background-color: #ffffffa5;
+  
+
+   } */
+
+   .topbar_item .topbar_right a{
+    text-align: end;
+    color: #00ff95;
+    background:linear-gradient(to left,rgba(0, 255, 170, 0.601) ,rgba(255, 98, 0, 0.606));
+    padding: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 2px solid ;
+ 
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 1px 1px 10px #ffff;
+    transition: all 0.5s;
+   
+   }
+   .topbar_item .topbar_right a svg{
+    color: #ffff;
+   }
+   .topbar_item .topbar_right a:hover{
+    color:#ffff;
+    transition: all 0.5s;
+    text-shadow:  0 0 20px #ffff;
+   }
+   /* =================================
+          mobile section Css Start
+========================================= */
+    .menu-bar{
+    display: none;
+   
+   } 
+   .mobile-menu .menu-bar a{
+    padding:  5px;
+    border-radius: 5px;
+   }
+
+   .mobile-menu .menu-bar a svg {
+
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+.mobile-menu{
+    margin-left: 140px;
+}
+.mobile-item ul li a{
+  color: #00ff95;
+  font-weight: 600;
+}
+.mobile-item ul li {
+    display: block;
+    line-height: 40px;
+   
+   
+    text-transform: uppercase;
+}
+.mobile-item{
+    background-color: #271537a8;
+    display: none;
+}
+.mobile-item ul li a:hover{
+    color: #ffff;
+   
+    transition: all 0.5s;
+    text-shadow: 0 0 30px #ffff;
+   }
+   .menu-bar #xmark{
+    display: none;
+   }
+   
+   .mobile-item ul li a:hover,
+   .mobile-item ul li a.active{
+    color: #ffff ;
+   }
+
+
+
+
+/* =================================
+          header section Css Start
+========================================= */
+   .header_section{
+    margin-top: 170px;
+   }
+   .header_inner{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top: 100px;
+    grid-gap: 45px;
+   
+   }
+    .header_img img{
+    width: 100%;
+    }
+
+
+
+
+
+   .header_dis{
+    margin-top: 60px;
+
+   }
+  
+
+   .header_dis h1{
+    font-size: 25px;
+   
+   }
+   .header_dis h2{
+    color: #fff;
+    font-weight: 600;
+    /* text-align: center; */
+   
+   }
+   
+   .header_dis h2 span{
+    color: #00ff95;
+    animation: info 5s ;
+    animation-iteration-count: infinite;
+}
+   @keyframes info{
+    0%{
+        color: #ffff;
+        text-shadow: 0 0 15px #ffff;
+    }
+    45%{
+        color: #ffca09;
+        text-shadow: 0 0 15px #ffca09;
+      
+    }
+    80%{
+        color: #00ff95;
+        text-shadow: 0 0 15px #00ff95;
+    }
+    100%{
+        color: #ffff;
+        text-shadow: 0 0 15px #ffff;
+    }
+   }
+   .header_dis p{
+    font-size: 20px;
+    line-height: 55px;
+  
+   }
+   .button a{
+    color:#10041c;
+    border: 2px solid #00ff95;
+    padding: 10px 20px ;
+    width: 130px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #00ff95;
+    font-weight: 700;
+    box-shadow:  1px 1px 10px #00ff95;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.7s;
+    
+   
+   }
+   .button a::after{
+    content: "";
+    position:absolute;
+    background-color:#10041c;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -200px;
+    transition: all 0.7s;
+    z-index: -1;
+
+   }
+   .button a:hover::after{
+    right: 0;
+    transition: all 0.7s;
+   }
+   .button a:hover{
+    color: #00ff95;
+    transition: all 0.7s;
+   }
+   .socail_icon  a{
+    font-size: 15px;
+    margin-right: 8px;
+    box-shadow: 1px 1px 10px #00ff95;
+    transition: all 0.7s;
+   text-align: center;
+   color: #00ff95;
+    border: 1px solid #00ff95;
+    border-radius: 50px;
+    padding: 8px;
+    height: 20px ;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden; 
+    z-index: 1;  
+}
+.socail_icon a::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: -200px ;
+    background-color: #00ff95;
+    z-index: -1;
+    transition: all 0.7s;
+}
+.socail_icon a:hover::after{
+    right: 0;
+    transition: all 0.7s
+}
+
+
+.socail_icon  a:hover{
+    
+    transition: all  0.7s;
+    color: #10041c;
+}
+.socail_icon a svg{
+    text-align: center;
+    margin-top: 3px;
+  
+}
+
+
+
+
+/* =================================
+          about section Css Start
+========================================= */
+#about-area{
+    margin-top: 30px;
+}
+
+ .about_inner {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.abt_img img{
+    max-width: 400px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px #d1c3e4;
+}
+.about_header h1{
+    font-size: 40px;
+    
+    font-family:Geneva, Tahoma, sans-serif ;
+}
+.about_header h1 span{
+    color: #00ff95;
+    
+} 
+.about_dis p {
+    font-size: 20px;
+    line-height: 35px;
+    
+}
+.about_dis p span{
+    color: #00ff95;
+    font-size: 25px;
+   font-family: sans-serif;
+   font-weight: 600;
+}
+.about_dis p b{
+    font-size: 18px;
+}
+
+.about_btn{
+    margin-top: 80px;
+    text-align: center;
+   
+}
+.about_btn .button .a1{
+ margin-left: 30px;
+}
+
+   .button .a1{
+    background-color:#10041c;
+   color: #00ff95;
+   }
+   .button .a1::after{
+    content: "";
+    position:absolute;
+    background-color:#00ff95;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -200px;
+    transition: all 0.7s;
+    z-index: -1;
+
+   }
+   .button .a1:hover{
+    color: #10041c;
+    transition: all 0.7s;
+   }
+
+
+
+/* =================================
+          serviecs section Css Start
+========================================= */
+
+.header_item h1{
+    color:#ffff;
+    font-size: 40px;
+    text-align:center;
+    font-weight: 800;
+    margin-top: 100px;
+}
+.header_item h1 span{
+    color: #00ff95;
+}
+.header_item p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    
+   
+}
+
+.services_inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.services_item img{
+    width: 440px;
+    height: 260px;
+   margin: auto;
+   display: flex;
+   
+   
+    border-radius: 8px;
+    
+}
+.services_item{
+    
+    margin-bottom:110px;
+    
+    
+   
+}
+.services_bag{
+    background-color: #10041c;
+    height: 460px;
+    width: 470px;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #271537;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+    overflow: hidden;
+    border: 3px solid #271537c3 ;
+    
+   
+
+}
+
+.services_bag ::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -500px;
+    right: 0;
+    
+    background-color: #271537c3;
+    border-radius: 8px;
+    z-index: -1;
+    transition: all 0.5s;
+    
+}
+.services_bag :hover ::before{
+    top: 0;
+    transition: all 0.5s;
+   
+
+}
+.services_dis{
+    text-align: center;
+}
+.services_dis h2{
+    color:#ffff;
+    font-weight: 800;
+    
+}
+.services_dis p{
+    font-size: 21px;
+    
+}
+.battun a{
+    color: #00ff95;
+    border: 2px solid #00ff95;
+    font-size: 20px;
+    background-color: #10041c;
+    box-shadow: 0 0 9px #00ff95;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .5s;
+ }
+ .battun a:hover{
+   background-color: #00ff95;
+   color:#10041c;
+   transition: all .5s;
+ }
+
+
+
+
+
+
+ /* =================================
+          skills section Css Start
+========================================= */
+
+.skills_item{
+    background-color: #271537;
+    padding: 10px ;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #271537;
+    
+}
+.skills_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_item p span{
+    color: #00ff95;
+}
+.header_item .edu_info{
+   color: #ffff;
+}
+.skills_bar{
+    background-color: #10041c;
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #ffca09;
+}
+.skills_bar span{
+    background-color: #00ff95;
+    box-shadow: 0 0 15px #00ff95;
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+}
+.skills_bar .html{
+    width: 80%;
+    animation: html 2s;
+}
+.skills_bar .css{
+    width: 60%;
+    animation: css 3s;
+}
+.skills_bar .bootstrap{
+    width: 55%;
+    animation: bootstrap 4s;
+}
+.skills_bar .javascript{
+  width:50%;
+  animation: js 5s;
+}
+.skills_bar .figma{
+    width: 90%;
+    animation: figma 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes bootstrap{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes figma{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+ /* =================================
+          clints section Css Start
+========================================= */
+
+.our_clints h1{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clints_inner{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+ 
+ grid-gap: 20px;
+
+ 
+}
+.clints_item img{
+ background-color: #d1c3e4;
+ width: 100%;
+ box-shadow: 0 0 10px #d1c3e4;
+ border-radius: 10px;
+
+}
+ 
+
+.clints_item{
+ margin-bottom: 40px;
+ 
+}
+
+
+
+ /* =================================
+          CONTACT section Css Start
+========================================= */
+
+.contact_inner{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-column-gap: 50px;
+    margin-bottom: 50px;
+}
+.contact_info{
+    margin-bottom: 30px;
+}
+.contact_info input{
+    height: 40px;
+    width: 100%;
+    color: #ffff;
+    background-color: #271537;
+    border: 2px solid #00ff95;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    
+    box-shadow: 0 0 10px #00ff95;
+    transition: all 0.4s;
+}
+.contact_info input::placeholder{
+    color: #ffca09;
+}
+.contact_item form input::placeholder{
+   color: #ffca09;
+    
+}
+.contact_info input:hover{
+    background-color: #10041c;
+    transition: all 0.4s;
+}
+.contact_item form{
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #271537;
+    box-shadow: 0 0 10px #00ff95;
+    transition: all 0.4s;
+    
+    
+}
+.contact_item form:hover{
+    background-color: #10041c;
+    transition: all 0.4s;
+}
+.contact_item form input{
+    padding-bottom: 150px;
+    padding-right: 200px;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    color: #ffff;
+}
+#cont_btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* #cont_btn .a1{
+    margin-left: 40px;
+} */
+
+
+
+
+ /* =================================
+          copy right section Css Start
+========================================= */
+
+.copyright_section{
+    padding: 2px 0;
+    margin-bottom: 15px;
+    border-top: 1px solid #00ff95;
+    
+   
+ }
+ .copyright_inner p span {
+    color: #00ff95;
+ }
+ .copyright_inner p{
+    color: #fff;
+    text-align: center;
+    word-spacing: 8px;
+    letter-spacing: 3px;
+    font-size: 18px;
+    
+ 
+ }
+ 
+
+
+
+
+
+
+ /* =================================
+          breadcrumb_area section Css Start
+========================================= */
+
+
+ .breadcrumb_area{
+    background-image: url('../image/group1.jpg');
+    background-position:bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  
+    padding: 60px 0;
+    position:relative;
+    z-index: 1;
+ }
+ .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.531);
+    
+    z-index: -1;
+   } 
+ 
+ .breadcrumb_inner{
+    z-index: 9;
+
+
+    
+ }
+ .about_header h1 .clr{
+    color: #ffca09;
+    
+} 
+.breadcrumb_inner .about_header h1{
+    margin-top: 120px;
+    text-align: center;
+  
+   
+}
